@@ -1,8 +1,5 @@
 package com.UserService.Entities;
 
-import jakarta.persistence.Entity;
-
-@Entity
 public class Ratings {
 	
 	private int ratingid;
@@ -10,6 +7,16 @@ public class Ratings {
 	private int hotelid;
 	private int rating;
 	private String feedback;
+	
+	private Hotel hotel;
+
+	public Hotel getHotel() {
+		return hotel;
+	}
+
+	public void setHotel(Hotel hotel) {
+		this.hotel = hotel;
+	}
 
 	public int getRatingid() {
 		return ratingid;
