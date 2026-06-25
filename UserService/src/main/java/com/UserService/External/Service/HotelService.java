@@ -10,5 +10,5 @@ import com.UserService.Entities.Hotel;
 public interface HotelService {
 
 	@GetMapping("/hotels/{id}")
-	 Hotel getHotel(@PathVariable int id);
+	 Hotel getHotel(@PathVariable("id") int id);
 }

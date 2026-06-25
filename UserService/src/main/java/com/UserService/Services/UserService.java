@@ -43,6 +43,8 @@ public class UserService {
 	}
 
 	public User getUserbyId(Long userId) {
+		
+		
 	   User user = userRepo.findById(userId).orElse(null);
 	   Ratings[] forobject= userserv.getRating(user.getId());
 	

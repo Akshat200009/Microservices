@@ -10,5 +10,6 @@ import com.UserService.Entities.Ratings;
 public interface NewUserService {
 
 	@GetMapping("/ratings/users/{userid}")
-	Ratings[] getRating(@PathVariable Long id);
+	Ratings[] getRating(@PathVariable("userid") Long userid);
 }
+    

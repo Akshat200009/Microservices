@@ -1,4 +1,4 @@
-package com.RatingService.Repository;
+ package com.RatingService.Repository;
 
 import java.util.List;
 
